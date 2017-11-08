@@ -4,6 +4,7 @@
   "description": "A basic computer repair services website built with Express, utilizing the Jade template engine and Node-mailer.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
