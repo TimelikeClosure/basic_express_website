@@ -9,11 +9,19 @@ const PORT = 3000;
 
 const app = express();
 
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 
 app.get('/', (req, res) => {
-    res.send('<h1>Hello world</h1>');
+    res.render('index', {title: 'Welcome'});
+});
+
+app.get('/about', (req, res) => {
+    res.render('about', {title: 'About'});
 });
 
 app.listen(PORT, () => {
