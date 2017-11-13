@@ -1,0 +1,13 @@
+{
+    "auth": {
+        "service": "<Provider>",
+        "auth": {
+            "user": "<Email Address>",
+            "pass": "<Email Password>"
+        }
+    },
+    "options": {
+        "from": "<To Name and Email Address>",
+        "to": "<To Name and Email Address>"
+    }
+}
